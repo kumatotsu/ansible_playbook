@@ -1,5 +1,6 @@
 ---
 - name: yum_playbook
-  host: all
+  hosts: all
+  become: yes
   roles:
     - yum_repo
