@@ -1,0 +1,5 @@
+---
+- name: yum_playbook
+  host: all
+  roles:
+    - yum_repo
