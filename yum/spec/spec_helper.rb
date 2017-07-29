@@ -14,7 +14,8 @@ vars = AnsibleSpec.get_variables(host, group_idx,hosts)
 ssh_config_file = AnsibleSpec.get_ssh_config_file
 set_property vars
 
-connection = ENV['TARGET_CONNECTION']
+#connection = ENV['TARGET_CONNECTION']
+connection = 'ssh'
 
 case connection
 when 'ssh'
